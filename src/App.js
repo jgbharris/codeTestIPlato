@@ -5,7 +5,6 @@ import './App.css';
 import SearchSection from './components/searchsection';
 import Results from './components/results';
 import HeaderBar from './components/headerbar'
-import Landing from './components/landing';
 
 import regions from './regions';
 
@@ -21,7 +20,13 @@ export default class App extends Component {
 			typesDisplayed: {
 				micro: true,
 				regional: true,
-				brewpub: true
+				brewpub: true,
+				large: true,
+				planning: true,
+				bar: true,
+				contract: true,
+				proprietor: true
+
 			},
 			searchTerm: "",
 			searchRegion: "",
@@ -103,18 +108,9 @@ export default class App extends Component {
 				)
 		})
 
-		//only render the landing info until the user has searched
-		let landing;
-		if (this.state.results.length<1){
-			landing = <Landing />
-		} else {
-			landing = undefined;
-		}
-
 		return (
 			<div className="App">
 			<HeaderBar />
-			{/* {landing} */}
 			<SearchSection
 				regions={this.state.regions}
 				searchTerm={this.state.searchTerm}

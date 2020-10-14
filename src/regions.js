@@ -1,6 +1,7 @@
 const regions = [
 			"Alabama",
-			"Alaska",
+      "Alaska",
+      "Arizona",
 			"Arkansas",
       "California",
       "Colorado",
