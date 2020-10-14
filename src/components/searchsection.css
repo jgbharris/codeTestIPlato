@@ -1,5 +1,4 @@
 .search-bar {
-	/* background-color: #E0E0Ewhite; */
 	opacity: 0.8;
     border-radius: 5px;
     margin-top: 20px;
@@ -22,11 +21,12 @@
 	font-size: 18px;
 	transition: background-color 0.5s;
 	transition: color 0.5s;
+	/* text-transform: uppercase; */
 }
 
 .state-button:hover, .menu-button:hover {
-	background-color: #041E42;
-	color: #FDBB30;
+	background-color: rgb(205,133,63);
+	color: white;
 }
 
 .search-form {

@@ -10,7 +10,7 @@
 	margin: 10px;
 	/*Indiana Pacer color theme*/
 	background-color: #FDBB30;
-	color: #041E42;
+	color: white;
 	border: none;
 	font-weight: bold;
 	font-size: 18px;
@@ -20,7 +20,7 @@
 
 .show-more-button:hover {
 	background-color: #041E42;
-	color: #FDBB30;
+	color: white;
 }
 
 .result-card {
