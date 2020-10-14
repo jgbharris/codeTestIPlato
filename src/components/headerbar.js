@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {Nav, Navbar} from 'react-bootstrap'
+import {Navbar} from 'react-bootstrap'
 
 import './headerbar.css'
 

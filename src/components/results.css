@@ -37,4 +37,5 @@
 
 .card-deck-custom {
 	flex-flow: row wrap;
+	opacity: 0.9;
 }
