@@ -37,6 +37,61 @@ export default function TypesFilter(props){
 						checked={props.typesDisplayed.regional}
 						onColor="#FDBB30"
 						offColor="#041E42" />
+						
+				</label>
+
+				<label className="toggle-label">
+					<span className="switch-label">Large</span>
+					<Switch 
+						className="react-switch" 
+						value="micro" 
+						onChange={() => props.handleFilterChange("large")} 
+						checked={props.typesDisplayed.large}
+						onColor="#FDBB30"
+						offColor="#041E42" />
+				</label>
+				<label className="toggle-label">
+					<span className="switch-label">Planning</span>
+					<Switch 
+						className="react-switch" 
+						value="brewpub" 
+						onChange={() => props.handleFilterChange("planning")} 
+						checked={props.typesDisplayed.planning}
+						onColor="#FDBB30"
+						offColor="#041E42" />
+				</label>
+				<label className="toggle-label">
+					<span className="switch-label">Bar</span>
+					<Switch 
+						className="react-switch" 
+						value="regional" 
+						onChange={() => props.handleFilterChange("bar")} 
+						checked={props.typesDisplayed.bar}
+						onColor="#FDBB30"
+						offColor="#041E42" />
+						
+				</label>
+				<label className="toggle-label">
+					<span className="switch-label">Contract</span>
+					<Switch 
+						className="react-switch" 
+						value="regional" 
+						onChange={() => props.handleFilterChange("contract")} 
+						checked={props.typesDisplayed.contract}
+						onColor="#FDBB30"
+						offColor="#041E42" />
+						
+				</label>
+				<label className="toggle-label">
+					<span className="switch-label">Proprietor</span>
+					<Switch 
+						className="react-switch" 
+						value="regional" 
+						onChange={() => props.handleFilterChange("proprietor")} 
+						checked={props.typesDisplayed.proprietor}
+						onColor="#FDBB30"
+						offColor="#041E42" />
+						
 				</label>
 
 			</form>
