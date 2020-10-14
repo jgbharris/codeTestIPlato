@@ -30,8 +30,8 @@
 
 .results-card-header {
 	font-size: 1.2em;
-	background-color: #041E42;
-	color: #FDBB30;
+	background-color: rgb(222,184,135);
+	color: white;
 	font-weight: bold;
 }
 
