@@ -10,7 +10,7 @@ export default class ResultCard extends Component {
     let webUrl=`${this.props.result.website_url}`;
 
     return (
-      <Card style={{ width: '18rem', textAlign: 'left' }} className="result-card">
+      <Card style={{ width: '18rem', height: "15rem", textAlign: 'left' }} className="result-card">
        <Card.Header className="results-card-header">{this.props.result.name}</Card.Header>
        <Card.Body>
           

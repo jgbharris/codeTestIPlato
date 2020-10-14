@@ -100,13 +100,18 @@ export default class App extends Component {
 	render() {
 
 
-		//filter results based on typesDisplayed
+		// filter results based on typesDisplayed
 		let filteredResults = this.state.results.filter((result, index) => {
 			return (
 				// Object.keys(this.state.typesDisplayed).includes(result.brewery_type)
 				this.state.typesDisplayed[result.brewery_type]
 				)
 		})
+
+		
+
+		console.log("filteredResults", filteredResults)
+		console.log("this.state.typesDisplayed", this.state.typesDisplayed)
 
 		return (
 			<div className="App">

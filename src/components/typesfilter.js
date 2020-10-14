@@ -99,36 +99,3 @@ export default function TypesFilter(props){
 
 	)
 }
-
-//plain checkbox
-				// <input 
-				// type="checkbox"
-				// checked={props.typesDisplayed.micro}
-				// value="micro"
-				// onChange={e => props.handleFilterChange(e.target.value)}
-				// />Micro
-				// <input 
-				// type="checkbox"
-				// checked={props.typesDisplayed.brewpub}
-				// value="brewpub"
-				// onChange={e => props.handleFilterChange(e.target.value)}
-				// />Brewpub
-				// <input 
-				// type="checkbox"
-				// checked={props.typesDisplayed.regional}
-				// value="regional"
-				// onChange={e => props.handleFilterChange(e.target.value)}
-				// />Regional
-
-				// <label className="switch">Micro
-    //     			<input type="checkbox" checked={props.typesDisplayed.micro} value="micro" onChange={e => props.handleFilterChange(e.target.value)} />
-    //     			<div className="slider"></div>
-    //   			</label>
-    //   			<label className="switch">
-    //     			<input type="checkbox" checked={props.typesDisplayed.brewpub} value="brewpub" onChange={e => props.handleFilterChange(e.target.value)} />
-    //     			<div className="slider"></div>
-    //   			</label>
-    //   			<label className="switch">
-    //     			<input type="checkbox" checked={props.typesDisplayed.regional} value="regional" onChange={e => props.handleFilterChange(e.target.value)} />
-    //     			<div className="slider"></div>
-    //   			</label>
