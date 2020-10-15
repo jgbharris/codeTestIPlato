@@ -9,22 +9,3 @@
 	margin: auto;
 	text-transform: uppercase;
 }
-
-.custom-link, .custom-brand {
-	color: #041E42!important;
-	font-weight: bold;
-}
-
-.custom-link {
-	font-size: 1.2em;
-	border: 1px solid transparent;
-	border-radius: 5px;
-	transition: border 0.4s;
-	margin-left: 10px;
-
-}
-
-.custom-link:hover {
-	border: 1px solid #041E42;
-	border-radius: 5px;
-}

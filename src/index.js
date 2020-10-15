@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Single from './components/single';
-import { render } from 'react-dom';
 
 
 
@@ -14,6 +13,24 @@ ReactDOM.render(
     </BrowserRouter>, 
     document.getElementById('root')
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ReactDOM.render(
 //         <App />,

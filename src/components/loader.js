@@ -16,7 +16,7 @@ export default class Loader extends React.Component {
 
     return (
       <Modal
-        show="true"
+        show = {true}
         size="sm"
         aria-labelledby="contained-modal-title-vcenter"
         centered

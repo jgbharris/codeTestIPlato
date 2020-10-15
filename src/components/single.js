@@ -58,11 +58,9 @@ class Single extends React.Component {
           <div>
             <p>Phone: {this.formatPhoneNumber(brewery.phone)}</p>
             <p>Address: {brewery.street}</p>
-            <div style={{ height: '200px', width: '200px' }}>
       </div>
           </div>
         </div>
-      </div>
     );
   }
 }

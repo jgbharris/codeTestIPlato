@@ -4,7 +4,7 @@ import slug from 'slugify';
 import PropTypes from 'prop-types';
 import './results.css';
 import Single from './single';
-import { BrowserRouter as Router, Switch, Route, Link, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 
 export default class ResultCard extends Component {
@@ -35,13 +35,12 @@ export default class ResultCard extends Component {
           <Card.Link className='results-url' href={webUrl} target="_blank">Website</Card.Link>
           <Link className='results-url' to={`/brewery/${id}/${slug(name)}`}>
           <p className='results-url'>More info</p>
-        </Link>
+          </Link>
         <Switch>
           <Route path={`/brewery/${id}/${slug(name)}`} component={Single} />
-          {/* <Route path="/brewery/:breweryId/brewerySlug" component={Single} /> */}
+          {/* <Route path="/brewery:Id" component={Single} /> */}
         </Switch>
         </Card.Body>
-        
       </Card>
       </Router>
       
