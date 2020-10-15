@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 
+
 import SearchSection from './components/searchsection';
 import Results from './components/results';
 import HeaderBar from './components/headerbar'
@@ -9,6 +10,10 @@ import HeaderBar from './components/headerbar'
 import regions from './regions';
 
 import {API_BASE_URL} from './config'
+
+// import { Route } from 'react-router-dom';
+// import Single from './components/single';
+
 
 
 
