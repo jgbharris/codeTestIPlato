@@ -6,6 +6,7 @@ import './App.css';
 import SearchSection from './components/searchsection';
 import Results from './components/results';
 import HeaderBar from './components/headerbar'
+// import Single from './components/single';
 
 import regions from './regions';
 
@@ -137,6 +138,7 @@ export default class App extends Component {
 				showMoreResults={()=>this.showMoreResults()}
 				loading={this.state.loading}
 			/>
+		
 			</div>
 			);
 	}

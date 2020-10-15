@@ -7,18 +7,18 @@ import { render } from 'react-dom';
 
 
 
-// ReactDOM.render(
-//     <BrowserRouter>
-//     <Route path="/brewery/:breweryId:/:brewerySlug" component={Single} />
-//         <App />
-//     </BrowserRouter>, 
-//     document.getElementById('root')
-// )
-
 ReactDOM.render(
-        <App />,
+    <BrowserRouter>
+    <Route path="/brewery/:breweryId:/:brewerySlug" component={Single} />
+        <App />
+    </BrowserRouter>, 
     document.getElementById('root')
 )
+
+// ReactDOM.render(
+//         <App />,
+//     document.getElementById('root')
+// )
 
 // const Root = function() {
 //     return (

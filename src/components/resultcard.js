@@ -25,7 +25,7 @@ export default class ResultCard extends Component {
 
     return (
       <Router>
-        <Card style={{ width: '18rem', height: "15rem", textAlign: 'left' }} className="result-card">
+        <Card style={{ width: '18rem', height: "20rem", textAlign: 'left' }} className="result-card">
         <Card.Header className="results-card-header">{this.props.result.name}</Card.Header>
         <Card.Body>
           <Card.Subtitle className="mb-2 text-muted results-city-header">{this.props.result.city}</Card.Subtitle>
@@ -34,10 +34,11 @@ export default class ResultCard extends Component {
           </Card.Text>
           <Card.Link className='results-url' href={webUrl} target="_blank">Website</Card.Link>
           <Link className='results-url' to={`/brewery/${id}/${slug(name)}`}>
-          <h5 className='results-url'>More info {name}</h5>
+          <p className='results-url'>More info</p>
         </Link>
         <Switch>
           <Route path={`/brewery/${id}/${slug(name)}`} component={Single} />
+          {/* <Route path="/brewery/:breweryId/brewerySlug" component={Single} /> */}
         </Switch>
         </Card.Body>
         

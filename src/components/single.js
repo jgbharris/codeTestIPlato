@@ -43,12 +43,9 @@ class Single extends React.Component {
       <div>
         <div className="single-brewery">
           <div>
-            <h2>{brewery.name}</h2>
-            <p>{brewery.brewery_type}</p>
-          </div>
-
-          <div>
-            <h3>More Info on {brewery.website_url}</h3>
+            <p>Phone: {brewery.phone}</p>
+            <p>Address: {brewery.street}</p>
+            {/* <p>{brewery.brewery_type}</p> */}
           </div>
         </div>
       </div>
