@@ -1,7 +1,12 @@
 .App {
   text-align: center;
-  background: url(background.jpg)  no-repeat fixed center;;
+  background: url(background.jpg);
+  background-position: center;
+  background-repeat: repeat-y;
   background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  cursor: url('foo108.cur'), auto;
 }
 
 .App-logo {

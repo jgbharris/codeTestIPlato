@@ -1,11 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import {
-//   withScriptjs,
-//   withGoogleMap,
-//   GoogleMap,
-//   Marker,
-// } from "react-google-maps";
+ 
 
 class Single extends React.Component {
   constructor() {
@@ -52,6 +47,8 @@ class Single extends React.Component {
 
 
 
+
+
   render() {
     const { brewery } = this.state;
     console.log("this.state", this.state)
@@ -61,7 +58,8 @@ class Single extends React.Component {
           <div>
             <p>Phone: {this.formatPhoneNumber(brewery.phone)}</p>
             <p>Address: {brewery.street}</p>
-            {/* <p>{brewery.brewery_type}</p> */}
+            <div style={{ height: '200px', width: '200px' }}>
+      </div>
           </div>
         </div>
       </div>

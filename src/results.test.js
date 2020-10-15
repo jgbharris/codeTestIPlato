@@ -16,11 +16,5 @@ describe('<Results />', () => {
         expect(callback).toHaveBeenCalled();
 
     })
-    //results are filtered based on state
-    //app is not wired this way... filtering happens in the App component
-
-    //new tab opens when a result url is clicked
-    //this should be resultscard test
-
 
 })
