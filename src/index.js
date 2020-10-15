@@ -9,6 +9,7 @@ import { render } from 'react-dom';
 
 // ReactDOM.render(
 //     <BrowserRouter>
+//     <Route path="/brewery/:breweryId:/:brewerySlug" component={Single} />
 //         <App />
 //     </BrowserRouter>, 
 //     document.getElementById('root')
@@ -23,9 +24,7 @@ ReactDOM.render(
 //     return (
 //       <BrowserRouter>
 //         <div>
-//         {/* <Link className='results-url' to={`/brewery/${id}/${slug(name)}`}>
-//           <h5 className='results-url'>{name}</h5>
-//         </Link> */}
+//           <Route exact path="/" component={App} />
 //           <Route path="/beer/:beerId/:beerSlug" component={Single} />
 //         </div>
 //       </BrowserRouter>

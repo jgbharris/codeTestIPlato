@@ -115,8 +115,8 @@ export default class App extends Component {
 
 		
 
-		console.log("filteredResults", filteredResults)
-		console.log("this.state.typesDisplayed", this.state.typesDisplayed)
+		// console.log("filteredResults", filteredResults)
+		// console.log("this.state.typesDisplayed", this.state.typesDisplayed)
 
 		return (
 			<div className="App">

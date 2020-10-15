@@ -15,7 +15,11 @@ class Single extends React.Component {
     console.log("this.props", this.props)
     console.log(`searching for ${this.props.match.params.breweryId}`);
     console.log(`this.state`, this.state)
-    this.loadBrewery(this.props.match.params.breweryId);
+    let path = this.props.match.path
+    console.log("path", path)
+    const id = path.replace(/\D/g,'');
+    console.log("id", id)
+    this.loadBrewery(id);
   }
 
   loadBrewery = breweryId => {
@@ -33,18 +37,18 @@ class Single extends React.Component {
   render() {
 
     const { brewery } = this.state;
-    // console.log("this.state", this.state)
+    console.log("this.state", this.state)
 
     return (
       <div>
         <div className="single-brewery">
-          <div className="desc">
-            <h2>{brewery.name}</h2>
-            <p>{brewery.brewery_type}</p>
+          <div>
+            {/* <h2>{name}</h2>
+            <p>{brewery.brewery_type}</p> */}
           </div>
 
-          <div className="style">
-            <h3>More Info on {brewery.website_url}</h3>
+          <div>
+            {/* <h3>More Info on {brewery.website_url}</h3> */}
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import slug from 'slugify';
 import PropTypes from 'prop-types';
 import './results.css';
 import Single from './single';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, withRouter } from 'react-router-dom';
 
 
 export default class ResultCard extends Component {
@@ -13,11 +13,15 @@ export default class ResultCard extends Component {
   }
   render() {
     // console.log("this.props", this.props)
+    // // console.log("this.props.result", this.props.result)
+    // console.log("this.props.result.name", this.props.result.name)
     console.log("this.props.result.id", this.props.result.id)
-    const { id, name } = this.props.result
+    // const { id, name } = this.props.result
 
 
-    let webUrl = `${this.props.result.website_url}`;
+    let webUrl = this.props.result.website_url
+    let id = this.props.result.id   
+    let name = this.props.result.name
 
     return (
       <Router>
@@ -29,13 +33,14 @@ export default class ResultCard extends Component {
             Brewery Type: {this.props.result.brewery_type}
           </Card.Text>
           <Card.Link className='results-url' href={webUrl} target="_blank">Website</Card.Link>
-        </Card.Body>
-        <Link className='results-url' to={`/brewery/${id}/${slug(name)}`}>
+          <Link className='results-url' to={`/brewery/${id}/${slug(name)}`}>
           <h5 className='results-url'>More info {name}</h5>
         </Link>
         <Switch>
-          <Route path="/brewery/:breweryId:/:brewerySlug" component={Single} />
+          <Route path={`/brewery/${id}/${slug(name)}`} component={Single} />
         </Switch>
+        </Card.Body>
+        
       </Card>
       </Router>
       
