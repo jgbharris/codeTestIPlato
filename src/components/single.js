@@ -1,5 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+// import {
+//   withScriptjs,
+//   withGoogleMap,
+//   GoogleMap,
+//   Marker,
+// } from "react-google-maps";
 
 class Single extends React.Component {
   constructor() {
@@ -34,16 +40,26 @@ class Single extends React.Component {
       });
   };
 
-  render() {
 
+  formatPhoneNumber = phoneNumber => {
+    let cleaned = ('' + phoneNumber).replace(/\D/g, '')
+    let match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/)
+    if (match) {
+      return '(' + match[1] + ') ' + match[2] + '-' + match[3]
+    }
+    return null
+  }
+
+
+
+  render() {
     const { brewery } = this.state;
     console.log("this.state", this.state)
-
     return (
       <div>
         <div className="single-brewery">
           <div>
-            <p>Phone: {brewery.phone}</p>
+            <p>Phone: {this.formatPhoneNumber(brewery.phone)}</p>
             <p>Address: {brewery.street}</p>
             {/* <p>{brewery.brewery_type}</p> */}
           </div>
